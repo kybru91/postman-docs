@@ -1,20 +1,9 @@
 ---
-title: "Writing pre-request scripts"
+title: "Write pre-request scripts"
 order: 42
 updated: 2022-07-20
 page_id: "pre_request_scripts"
 contextual_links:
-  - type: section
-    name: "Prerequisites"
-  - type: link
-    name: "Sending requests"
-    url: "/docs/sending-requests/requests/"
-  - type: link
-    name: "Intro to Scripts"
-    url: "/docs/writing-scripts/intro-to-scripts/"
-  - type: link
-    name: "Using variables"
-    url: "/docs/sending-requests/variables/"
   - type: section
     name: "Additional resources"
   - type: subtitle
@@ -38,17 +27,11 @@ contextual_links:
   - type: link
     name: "Toast chains requests automatically with pre-request scripts"
     url:  "https://www.postman.com/case-studies/toast/"
-  - type: section
-    name: "Next steps"
-  - type: link
-    name: "Test scripts"
-    url: "/docs/writing-scripts/test-scripts/"
-
 warning: false
 
 ---
 
-You can use pre-request scripts in Postman to execute JavaScript before a request runs. By including code in the __Pre-request Script__ tab for a request, collection, or folder, you can carry out pre-processing such as setting variable values, parameters, headers, and body data. You can also use pre-request scripts for debugging code, for example by logging output to the console.
+You can use pre-request scripts in Postman to execute JavaScript before a request runs. By including code in the __Pre-request Script__ tab for a request, collection, or folder, you can carry out pre-processing such as setting variable values, parameters, headers, and body data. You can also use pre-request scripts for debugging code, for example by logging output to the Postman Console.
 
 ## Contents
 

@@ -1,15 +1,6 @@
 ---
-title: "Viewing scheduled collection runs"
-updated: 2022-11-09
-contextual_links:
-  - type: section
-    name: "Prerequisites"
-  - type: link
-    name: "Using the Collection Runner"
-    url: "/docs/collections/running-collections/intro-to-collection-runs/"
-
-warning: false
-
+title: "View your scheduled collection runs"
+updated: 2023-06-15
 ---
 
 You can run collections at specific times each day or week. For example, you may want to run a collection that tests your API every day. You can use the Collection Runner to [schedule collection runs](/docs/collections/running-collections/scheduling-collection-runs/) to execute automatically at specified dates and times.
@@ -34,13 +25,9 @@ You can run collections at specific times each day or week. For example, you may
 
 ## Viewing scheduled collection runs in Postman
 
-You can view your scheduled collection runs in Postman by navigating to your workspace and selecting **Collections > Your collection > Runs > Scheduled runs**.
+You can view your scheduled collection runs in Postman by navigating to your workspace and selecting **Collections > Your collection > Runs > Scheduled runs**. Hover over your scheduled collection run and select **View**.
 
-<img src="https://assets.postman.com/postman-docs/v10/scheduled-runs-tab-5-v10.jpg" alt="View scheduled collection run in tab"/>
-
-Hover over your scheduled collection run and select **View**.
-
-![Scheduled runs view results v10](https://assets.postman.com/postman-docs/v10/scr-hover-select-view-1-v10.jpg)
+![Scheduled runs view results v10](https://assets.postman.com/postman-docs/v10/scr-hover-select-view-1-v10-13a.jpg)
 
 > Scheduled collection runs in team workspaces are visible to all members of the workspace.
 
@@ -64,7 +51,7 @@ You can use filters to identify recurring patterns in your scheduled collection 
 
 You can filter by run type to compare how the response time changes between all runs, manual runs, and scheduled runs. Select **Type: All**, then select the type of run you'd like to analyze further.
 
-> Manual runs are initiated in Postman or are triggered by the [Postman API](https://documenter.postman.com/view/631643/JsLs/?version=latest#5b277ca0-7114-e04e-f1f5-246fbbd6d973). Scheduled runs are initiated by the schedule you set when creating or editing your scheduled run. Webhook runs are initiated by integrations you've created.
+> Manual runs are initiated in Postman. Scheduled runs are initiated by the schedule you set when creating or editing your scheduled run. Webhook runs are initiated by integrations you've created.
 
 #### Filtering by run result
 
@@ -93,8 +80,10 @@ Select a bar in the graph and select **Test Results** to get more detailed infor
 
 ### Console log
 
-Select a bar in the graph and select **Console Log** to view details about the run and the [`console.log`](/docs/sending-requests/troubleshooting-api-requests/) statements that run as part of your pre-request and test scripts. Run details specify the various stages of a collection run such as preparing run, running, rerunning, and the run result, along with error and test failure information. Selecting a request in the Console Log will open it in a tab, allowing you to review and edit the request as needed.
+Select a bar in the graph and select **Console Log** to view details about the run and the [`console.log`](/docs/sending-requests/response-data/troubleshooting-api-requests/) statements that run as part of your pre-request and test scripts. Run details specify the various stages of a collection run such as preparing run, running, rerunning, and the run result, along with error and test failure information. Selecting a request in the Console log will open it in a tab, allowing you to review and edit the request as needed.
 
-[![console log](https://assets.postman.com/postman-docs/v10/scr-view-console-log-v10.jpg)](https://assets.postman.com/postman-docs/v10/scr-view-console-log-v10.jpg)
+[![Console log](https://assets.postman.com/postman-docs/v10/scr-view-console-log-v10.jpg)](https://assets.postman.com/postman-docs/v10/scr-view-console-log-v10.jpg)
 
-You can use this console to troubleshoot issues and learn more about an individual run's behavior.
+You can use the Console to troubleshoot issues and learn more about an individual run's behavior.
+
+> **Scheduled collection run logs are retained for a period of six months.** If you select a scheduled collection run that's outside the retention period, you can view the number of failed tests and errors. Other collection run details will no longer be available. To request this information, contact [Postman support](https://www.postman.com/support/).

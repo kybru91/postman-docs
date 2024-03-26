@@ -1,15 +1,10 @@
 ---
-title: "BigPanda"
+title: "Integrate Postman with BigPanda"
 order: 164
 updated: 2022-10-13
 page_id: "bigpanda"
 warning: false
 contextual_links:
-  - type: section
-    name: "Prerequisites"
-  - type: link
-    name: "Grouping requests in collections"
-    url: "/docs/sending-requests/intro-to-collections/"
   - type: section
     name: "Additional resources"
   - type: subtitle
@@ -69,4 +64,4 @@ BigPanda gives you real-time alerts based on the results of your monitors. If a 
 
 ![view in bigpanda](https://assets.postman.com/postman-docs/bigPanda-monitors-2.jpg)
 
-> **You can view your configured integrations on the [Browse Integrations](https://go.postman.co/integrations/browse) page.** You can also view integrations that have been configured for a monitor by opening the monitor and selecting the information icon <img alt="Information icon" src="https://assets.postman.com/postman-docs/icon-information-v9-5.jpg#icon" width="16px"> in the right sidebar. Learn more about [viewing or editing integrations](/docs/integrations/intro-integrations/#viewing-or-editing-integrations).
+> **You can view your configured integrations on the [Browse Integrations](https://go.postman.co/integrations/browse) page.** You can also view integrations that have been configured for a monitor by opening the monitor and selecting the information icon <img alt="Information icon" src="https://assets.postman.com/postman-docs/icon-information-v9-5.jpg#icon" width="16px"> in the right sidebar. Learn more about [viewing or editing integrations](/docs/integrations/intro-integrations/#view-or-edit-integrations).

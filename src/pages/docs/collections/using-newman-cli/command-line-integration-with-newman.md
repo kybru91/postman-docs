@@ -1,13 +1,7 @@
 ---
-title: "Running collections on the command line with Newman"
-updated: 2022-05-23
-search_keyword: "newman run"
+title: "Run and test collections from the command line using Newman CLI"
+updated: 2023-09-26
 contextual_links:
-  - type: section
-    name: "Prerequisites"
-  - type: link
-    name: "Using the Collection Runner"
-    url: "/docs/collections/running-collections/intro-to-collection-runs/"
   - type: section
     name: "Additional resources"
   - type: subtitle
@@ -24,36 +18,37 @@ contextual_links:
     name: "Next-Level Automation Tricks for Newman"
     url: "https://blog.postman.com/automation-tricks-for-newman/"
   - type: link
-    name: "Newman: run and test your collections from the command line"
-    url: "https://blog.postman.com/newman-run-and-test-your-collections-from-the-command-line/"
+    name: "Making the switch: empowering manual testers to automate their API tests"
+    url: "https://blog.postman.com/switching-from-manual-to-automated-api-testing/"
+  - type: link
+    name: "The Postman CLI vs. Newman: choose the right tool for you"
+    url: "https://blog.postman.com/postman-cli-vs-newman/"
   - type: subtitle
     name: "Case Studies"
   - type: link
     name: "SEI Novus integrated Newman into its CI/CD process for regression testing"
     url:  "https://www.postman.com/case-studies/sei-novus/"
-  - type: section
-    name: "Next steps"
   - type: link
-    name: "Intro to the Postman API"
-    url: "/docs/developer/postman-api/intro-api/"
-warning: false
+    name: "Western Governors University (WGU) leverages Newman to automate tests"
+    url:  "https://www.postman.com/case-studies/wgu/"
 ---
+
 Newman is a command-line Collection Runner for Postman. It enables you to run and test a Postman Collection directly from the command line. It's built with extensibility in mind so that you can integrate it with your continuous integration (CI) servers and build systems.
 
 Newman maintains feature parity with Postman and allows you to run collections the way they're executed inside the collection runner in Postman.
 
 Newman resides in the [npm registry](https://www.npmjs.com/package/newman) and on [GitHub](https://github.com/postmanlabs/newman).
 
-You can also run collections from the command line using the [Postman CLI](/docs/postman-cli/postman-cli-overview/). For more information on the differences between Newman and the Postman CLI, see [deciding which command-line companion to use](/docs/postman-cli/postman-cli-overview/#deciding-which-command-line-companion-to-use).
+You can also run collections from the command line using the [Postman CLI](/docs/postman-cli/postman-cli-overview/). For more information on the differences between Newman and the Postman CLI, see [Deciding which command-line companion to use](/docs/postman-cli/postman-cli-overview/#deciding-which-command-line-companion-to-use).
 
-[![Running Newman](https://assets.postman.com/postman-docs/newman-running-in-terminal.gif)](https://assets.postman.com/postman-docs/newman-running-in-terminal.gif)
+![Running Newman](https://assets.postman.com/postman-docs/newman-running-in-terminal.gif)
 
 ## Contents
 
 * [Getting started](#getting-started)
 * [Options](#options)
 * [File uploads](#file-uploads)
-* [Custom reporters](#custom-reporters)
+* [Reporters](#reporters)
 
 ## Getting started
 
@@ -67,6 +62,6 @@ Newman provides a rich set of options to customize a run. Learn more about [Newm
 
 Newman supports file uploads, so you can use a data file (such as a text file) to fill in form data fields. Learn more about [uploading files in Newman](/docs/collections/using-newman-cli/newman-file-uploads/).
 
-## Custom reporters
+## Reporters
 
-Custom reporters are useful to generate collection run reports that cater to specific use cases, for example, logging out the response body when a request (or its tests) fail. Learn more about [using Newman custom reporters](/docs/collections/using-newman-cli/newman-custom-reporters/).
+Reporters are useful to generate collection run reports that cater to specific use cases, for example, logging out the response body when a request (or its tests) fail. Learn more about using Newman [built-in reporters](/docs/collections/using-newman-cli/newman-built-in-reporters/), [external reporters, and custom reporters](/docs/collections/using-newman-cli/newman-custom-reporters/).

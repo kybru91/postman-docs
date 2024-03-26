@@ -1,16 +1,11 @@
 import React from 'react';
-import ReactDOMServer from 'react-dom/server';
-import { OutboundLink } from 'gatsby-plugin-google-analytics';
-import { v4 as uuidv4 } from 'uuid';
 import styled from 'styled-components';
 import '../../styles/config/normalize.css';
-import { theme } from '../../styles/theme';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import upcomingEvents from '../../bff-data/events.json';
 import { LandingCard } from '../components/MarketingPages/Cards';
 import '../../styles/config/_pm-icons.css';
-import { BaseLink, BaseLinkStyles, BaseButton, SectionStyles, VideoComponent } from 'aether-marketing';
+import { BaseLink, BaseButton, SectionStyles, VideoComponent } from 'aether-marketing';
 
 const HeroWrapper = styled.section`
   background-color: rgba(173, 205, 251, .2);
@@ -37,12 +32,6 @@ const HRStyles = styled.hr`
 
 class IndexPage extends React.Component {
   componentDidMount() {
-    const pix = document.createElement('script');
-    pix.language = 'JavaScript1.1';
-    pix.src = '//pixel.mathtag.com/event/js?mt_id=1538259&mt_adid=244742&mt_exem=&mt_excl=&v1=&v2=&v3=&s1=&s2=&s3=';
-    pix.async = true;
-    document.body.appendChild(pix);
-
     const id = 'Polyfill';
     if (!document.getElementById(id)) {
       const polyfill = document.createElement('script');
@@ -103,7 +92,7 @@ class IndexPage extends React.Component {
                     title="Get started with Postman"
                     description="Send your first API request in Postman in just a few clicks!"
                     cta="Send a request"
-                    link="/docs/getting-started/sending-the-first-request/"
+                    link="/docs/getting-started/first-steps/sending-the-first-request/"
                     icon="https://voyager.postman.com/icon/spaceship-rocket-launch-icon-postman.svg"
                   />
                 </div>
@@ -138,7 +127,7 @@ class IndexPage extends React.Component {
                   <LandingCard
                     title="Collaborate with your team"
                     description="Use Postman to enhance collaboration within your team."
-                    link="/docs/collaborating-in-postman/working-with-your-team/collaboration-overview/"
+                    link="/docs/collaborating-in-postman/collaborate-in-postman-overview/"
                     cta="Start collaborating"
                     icon="https://voyager.postman.com/icon/community-three-people-icon-postman.svg"
                   />

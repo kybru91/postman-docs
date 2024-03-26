@@ -1,12 +1,7 @@
 ---
-title: "Configuring SSO for a team"
+title: "Configure SSO for a team"
 updated: 2023-02-06
 contextual_links:
-  - type: section
-    name: "Prerequisites"
-  - type: link
-    name: "Intro to SSO"
-    url: "/docs/administration/sso/intro-sso/"
   - type: section
     name: "Additional resources"
   - type: subtitle
@@ -58,9 +53,9 @@ To enter details in the **Identity provider details** section, you must sign in 
 
 * [Microsoft AD FS](/docs/administration/sso/microsoft-adfs/)*
 
-* [Azure AD](/docs/administration/sso/azure-ad/)*
+* [Microsoft Entra ID](/docs/administration/sso/azure-ad/)*
 
-* [Custom SAML](/docs/administration/sso/intro-sso/#sso-setup-for-saml-20-compliant-idps)*
+* [Custom SAML](/docs/administration/sso/custom-saml/)*
 
 * [Duo](/docs/administration/sso/duo/)*
 
@@ -115,7 +110,7 @@ The user will be automatically associated to the team with a [Developer role](/d
 The first time an existing Postman user [signs in to Postman using the authentication method](/docs/administration/sso/user-sso/), the user is automatically added to the team if one of the following is true:
 
 * The team has available seats and the [**Automatically add new users**](#automatically-adding-new-users) checkbox was selected during [authentication method configuration](#configuring-single-sign-on).
-* A Team Admin has [invited the user](/docs/administration/managing-your-team/managing-your-team/#inviting-users) to join the team.
+* A Team Admin has [invited the user](/docs/administration/managing-your-team/manage-team-members/#invite-users) to join the team.
 
 The user will be automatically associated to the team with a [Developer role](/docs/collaborating-in-postman/roles-and-permissions/#team-roles) and have access to team resources.
 
@@ -133,7 +128,7 @@ By default, Postman only supports Service Provider (Postman)-initiated sign ins 
 
 ### Removing team access
 
-You must [remove users from your team in Postman](/docs/administration/managing-your-team/managing-your-team/#removing-team-members) to prevent access to shared resources. When you remove a user from your team, you'll still retain access to any data they have shared with the team. You'll also be able to reassign their personal workspaces and the data within them to a remaining team member. This way the team doesn't lose access to any unshared work.
+You must remove users from your team in Postman to prevent access to shared resources. When you remove a user from your team, you'll still retain access to any data they have shared with the team. You'll also be able to reassign their personal workspaces and the data within them to a remaining team member in some situations. To learn more, see [Removing team members](/docs/administration/managing-your-team/manage-team-members/#remove-team-members).
 
 ## Troubleshooting
 

@@ -1,13 +1,7 @@
 ---
-title: "Uploading files in Newman"
-updated: 2022-05-23
-search_keyword: "newman run"
+title: "Upload files with Newman"
+updated: 2023-10-04
 contextual_links:
-  - type: section
-    name: "Prerequisites"
-  - type: link
-    name: "Using the Collection Runner"
-    url: "/docs/collections/running-collections/intro-to-collection-runs/"
   - type: section
     name: "Additional resources"
   - type: subtitle
@@ -23,20 +17,12 @@ contextual_links:
   - type: link
     name: "Newman: run and test your collections from the command line"
     url: "https://blog.postman.com/newman-run-and-test-your-collections-from-the-command-line/"
-  - type: section
-    name: "Next steps"
-  - type: link
-    name: "Intro to the Postman API"
-    url: "/docs/developer/postman-api/intro-api/"
-
-warning: false
 ---
 
-## File uploads
-
-Newman supports file uploads. For this to work, upload the file in the relative location specified in the collection. For instance, review this collection:
+Newman supports file uploads. For this to work, the file must be located in the same working directory as the collection file. Your file must also include the filename in the `src` attribute of the request.
 
 ```json
+// the filename is sample-file.txt
 {
     "variables": [],
     "info": {
@@ -86,8 +72,11 @@ Newman supports file uploads. For this to work, upload the file in the relative 
 }
 ```
 
-The file ``sample-file.txt`` must be present in the current working directory as the collection. Run this collection as usual.
+The file `sample-file.txt` must be present in the same working directory as the collection. Run this collection as usual.
 
 ```bash
+$ ls
+file-upload.postman_collection.json  sample-file.txt
+
 $ newman run file-upload.postman_collection.json
 ```
